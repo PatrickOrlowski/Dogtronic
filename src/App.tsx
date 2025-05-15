@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import ShopListInfinite from "./components/ShopListInfinite"
+import useShops from "./hooks/useShops"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App: React.FC = () => {
+    const { shops, fetchMore, hasMore, isLoading, isError } = useShops()
+
+    return (
+        <main className="min-h-screen bg-gray-100">
+            <header className="bg-white shadow p-4 text-center">
+                <h1 className="text-2xl font-bold text-gray-800">Shop List</h1>
+            </header>
+            <ShopListInfinite
+                shops={shops}
+                fetchMore={fetchMore}
+                hasMore={hasMore}
+                isLoading={isLoading}
+                isError={isError}
+            />
+        </main>
+    )
 }
 
-export default App;
+export default App
