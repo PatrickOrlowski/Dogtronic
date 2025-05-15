@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+# 🏪 Shop List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A performant and responsive React application that renders a list of shops with lazy-loaded images and infinite scroll support.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- ⚛️ Built with **React + TypeScript**
+- 💨 Styled using **Tailwind CSS**
+- ♾️ **Infinite scroll** for loading large shop datasets efficiently
+- 🖼️ **Lazy loading** of heavy images
+- 🧪 **Unit tests** for core components with React Testing Library
+- 🔍 Optimized address parsing (city and street extracted from raw string)
+- 🧩 Component-based architecture: `ShopCard`, `ShopList`, `ShopListInfinite`
 
-### `npm start`
+## 🛠️ Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React 19 + TypeScript
+- Tailwind CSS 3
+- React Testing Library & Jest
+- uuid, picsum.photos for mock data
+- Create React App compatible
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ▶️ Getting Started
 
-### `npm run build`
+### 1. Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Start the dev server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+or for Vite:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm run dev
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🧪 Running Tests
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm test
+```
 
-## Learn More
+All key components (`ShopCard`, `ShopList`, `ShopListInfinite`) are covered with unit tests.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧩 Component Overview
+
+- `ShopCard` – Displays a single shop's image, type, city, and street
+- `ShopList` – Renders a static list of shops
+- `ShopListInfinite` – Uses infinite scroll with intersection observer to load more data dynamically
+
+---
+
+
+## 📦 Build
+
+```bash
+npm run build
+```
+
+---
+
+## 📄 License
+
+MIT © 2025

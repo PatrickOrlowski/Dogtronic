@@ -1,7 +1,7 @@
 import React from "react"
 import { render, screen } from "@testing-library/react"
-import ShopCard from "../ShopCard"
-import { Shop } from "../../types"
+import ShopCard from "../components/ShopCard"
+import { Shop } from "../types"
 
 const mockShop: Shop = {
     id: "shop-123",

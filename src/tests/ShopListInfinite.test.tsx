@@ -1,7 +1,7 @@
 import React from "react"
 import { render, screen } from "@testing-library/react"
-import ShopListInfinite from "../ShopListInfinite"
-import { Shop } from "../../types"
+import ShopListInfinite from "../components/ShopListInfinite"
+import { Shop } from "../types"
 
 const mockShops: Shop[] = [
     {
