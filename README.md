@@ -1,6 +1,6 @@
 # 🏪 Shop List App
 
-[Demo Link](dogtronic-lk0cpb23t-patrykorlowskiorbitvucoms-projects.vercel.app)
+[Demo Link](https://dogtronic-lk0cpb23t-patrykorlowskiorbitvucoms-projects.vercel.app)
 
 A performant and responsive React application that renders a list of shops with lazy-loaded images and infinite scroll support.
 
